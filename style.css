@@ -1,0 +1,178 @@
+:root 
+{
+    --font-headings: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    --violet: hsl(257, 40%, 49%);
+}
+
+body 
+{
+    margin: 0;
+    font-family: var(--font-body);
+    color: white;
+    height: 100vh;
+}
+h1, p 
+{
+    text-align: center;
+}
+
+img 
+{
+    width: 100%;
+}
+
+.landing-page 
+{
+    background-image: url(images/bg-mobile.svg);
+    background-color: var(--violet);
+    background-size: cover;
+    padding: 2.375em 10.4%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.logo 
+{
+    max-width: 7.5em;
+    margin-bottom: 4.375em;
+    align-self:flex-start;
+}
+
+.main-content
+{
+    align-self:stretch;
+    margin-bottom: 3.875em;
+
+}
+
+
+.main-content img
+{
+    max-width: 43.75em;
+}
+
+.main-text 
+{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 
+{
+    font-family: var(--font-headings);
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.main-content p 
+{
+    margin-bottom:2.5em;
+    max-width:300px;
+}
+
+button 
+{
+    border: none;
+    background-color: white;
+    color:var(--violet);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    border-radius: 2em;
+    padding: 0.7em 6.25em;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+}
+
+
+.social-media 
+{
+    display: flex;
+}
+
+.social-icon-wrapper 
+{
+    margin-right: 0.9375em;
+    border: solid white 0.05em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius:2em;
+}
+
+.social-icon 
+{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-70%) scale(0.85);
+}
+
+
+@media (min-width: 600px)
+{
+    .landing-page 
+    {
+        padding: 3.875em 5.5% 2.5em;
+        background-image: url(images/bg-desktop.svg);
+    }
+    .logo 
+    {
+        max-width: 12.5em;
+    }
+    .main-content 
+    {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-content img 
+    {
+        margin-right: 3.8%;
+        width:45%;
+    }
+
+    .main-text h1 
+    {
+        font-size: 2.5rem;
+        max-width: 500px;
+        text-align: left;
+    }
+
+    .main-text p 
+    {
+        text-align: left;
+        font-size: 1.1rem;
+        max-width:500px;
+    }
+
+    .main-text button 
+    {
+        align-self:flex-start;
+        font-size: 1.1rem;
+        padding-left: 3.86em;
+        padding-right: 3.86em;
+    }
+
+    .social-media
+    {
+        align-self: flex-end;
+    }
+
+    .social-icon-wrapper 
+    {
+        width: 2.5em;
+        height:2.5em;
+    }
+
+    .social-icon 
+    {
+        transform:translate(-50%,-70%) scale(1.1);
+    }
+}
